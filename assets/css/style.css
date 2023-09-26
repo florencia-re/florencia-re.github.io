@@ -1,0 +1,40 @@
+.navbar {
+  background-color: #333A40;
+}
+
+.navbar-brand img { max-width: 100px; }
+
+.navbar .navbar-nav .btn-compra-tickets{
+  color: #25A342;
+}
+
+.banner__image{
+  background-image: url(./../img/ba1.jpg);
+  height: 100vh;
+  filter: brightness(.5);
+  -webkit-filter: brightness(.5);
+}
+
+.banner__titulo {
+  color: #00fe48;
+  font-family: Pacifico, cursive;
+  position: absolute;
+  left: 50%;
+  text-align: center;
+  top: 30%;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
+  width: 100%;
+  transform: translate(-50%, -50%);
+}
+/* 
+@media screen and (min-widht:0) {
+  .banner__titulo {
+      font-size: 3rem;
+  }
+}
+
+@media screen and (min-widht:768px) {
+  .banner__titulo {
+      font-size: 5.0625rem;
+  }
+} */
