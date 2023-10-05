@@ -1,8 +1,11 @@
 .navbar {
   background-color: #333A40;
+  height: 10vh;
 }
 
-.navbar-brand img { max-width: 100px; }
+.navbar-brand img { 
+  max-width: 100px; 
+}
 
 .navbar .navbar-nav .btn-compra-tickets{
   color: #25A342;
@@ -21,8 +24,8 @@
 }
 
 .carousel-item {
-  margin-top: 8vh;
-  height: 92vh;
+  margin-top: 10vh;
+  height: 90vh;
   background-size: cover;
   background-position: center center;
 }
@@ -37,7 +40,7 @@
 }
 
 #spekears-1{
-  height: 10vh;
+  height: 8vh;
   /* margin-top: 8vh !important; */
 }
 
@@ -71,8 +74,12 @@ div .carousel-indicators{
   font-size: 2.2rem;
 } 
 
+#form-3{
+  /* height: 6vh; */
+}
+
 section.form{
-  margin:5vh;
+  margin:2vh;
 }
 
 .bg-aside1 {
@@ -103,7 +110,7 @@ button.btn.btn-lg.btn-form:hover {
 #main-footer {
   background: #1d3c4e;
   color: #fff;
-  padding: 1.5rem;
+  padding: 1rem;
 }
 
 #main-footer .nav-link {
@@ -116,7 +123,3 @@ button.btn.btn-lg.btn-form:hover {
 @media (min-width: 992px) {
   #main-footer .nav-link span { display: block; }
 }
-/* 
-@media(max-width: 550px){
-  #spekears-1 #trip-2 {visibility: hidden;}
-} */
