@@ -1,6 +1,15 @@
+.navbar-dark .navbar-nav .btn-compra-tickets { 
+  color: #25a342; 
+}
+
 .navbar {
-  background-color: #333A40;
+  background-color: #333a40 !important;
   height: 10vh;
+}
+
+.navbar .container{
+  background: #333a40 !important;
+
 }
 
 .navbar-brand img { 
@@ -74,10 +83,6 @@ div .carousel-indicators{
   font-size: 2.2rem;
 } 
 
-#form-3{
-  /* height: 6vh; */
-}
-
 section.form{
   margin:2vh;
 }
@@ -122,4 +127,21 @@ button.btn.btn-lg.btn-form:hover {
 
 @media (min-width: 992px) {
   #main-footer .nav-link span { display: block; }
+  .btn-compra-tickets {
+    border: 1px solid transparent;
+    border-radius: .8rem;
+  }
+  .navbar-dark .navbar-nav .btn-compra-tickets.active {
+    background: #25a342;
+  }
 }
+
+@media (max-width: 750px){
+  #spekears-1{
+    display: none;
+  }
+  #trip-2{
+  display: none;
+  }
+}
+
