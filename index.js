@@ -1,7 +1,7 @@
 // Defino valor de ticket
 const valorTicket = 200;
 
-// Defino porcentajes de descuento segÃºn categorÃ­a
+// Defino porcentajes de descuento según la categoría
 let descuentoEstudiante = 80;
 let descuentoTrainee    = 50;
 let descuentoJunior     = 15;
@@ -13,7 +13,7 @@ let mail            = document.getElementById("mail");
 let cantidadTickets = document.getElementById("cantidadTickets");
 let categoria       = document.getElementById("categoriaSelect");
 
-// FunciÃ³n para quitar el estilo de error a los elementos del form
+// Funcion para quitar el estilo de error a los elementos del form
 function quitarClaseError() {
     let x = document.querySelectorAll(".form-control, .form-select");
     let i;
@@ -22,7 +22,7 @@ function quitarClaseError() {
     }
 }
 
-// CÃ¡lculo total a pagar
+// Calculo total a pagar
 function total_a_pagar() {
 
     // Ejecuto función para que quite todos los estilos de error en los campos que los tuvieran
@@ -37,7 +37,7 @@ function total_a_pagar() {
         return;
     }
 
-    // Verifico que haya seleccionado una categorÃ­a, sino que aplique un estilo de error, haga foco en el campo y se detenga
+    // Verifico que haya seleccionado una categori­a, sino que aplique un estilo de error, haga foco en el campo y se detenga
     if (categoria.value == "") {
         alert("Por favor, seleccione una categoría.");
         categoria.classList.add("is-invalid");
@@ -48,7 +48,7 @@ function total_a_pagar() {
     // Multiplico cantidad de tickets por el valor
     let totalValorTickets = (cantidadTickets.value) * valorTicket;
 
-    // Aplico descuentos segÃºn categorÃ­a
+    // Aplico descuentos segun categori­a
     if (categoria.value == 0) {
         totalValorTickets = totalValorTickets ;
     }
@@ -66,7 +66,7 @@ function total_a_pagar() {
     totalPago.innerHTML = totalValorTickets;
 }
 
-// Boton Resumen recibe un escuchador y la funcion del cÃ¡lculo
+// Boton Resumen recibe un escuchador y la funcion del calculo
 btnResumen.addEventListener('click', total_a_pagar);
 
 // Funcion para el boton Borrar para que borre el valor
