@@ -4,7 +4,7 @@
 
 .navbar {
   background-color: #333a40 !important;
-  height: 10vh;
+  /* height: 9.99vh; */
 }
 
 .navbar .container{
@@ -124,6 +124,11 @@ button.btn.btn-lg.btn-form:hover {
 }
 
 #main-footer .nav-link:hover { opacity: .7; }
+
+.conteiner-cards{
+  padding-top: 7rem;
+}
+
 
 @media (min-width: 992px) {
   #main-footer .nav-link span { display: block; }
